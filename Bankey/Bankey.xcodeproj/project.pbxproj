@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4506F48D2A08317600153E73 /* SkeletonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4506F48C2A08317600153E73 /* SkeletonLoadable.swift */; };
 		4506F48F2A08324B00153E73 /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4506F48E2A08324B00153E73 /* SkeletonCell.swift */; };
+		4506F4922A09811000153E73 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4506F4912A09811000153E73 /* ProfileManager.swift */; };
+		4506F4942A09825800153E73 /* AccountSummaryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4506F4932A09825800153E73 /* AccountSummaryViewControllerTests.swift */; };
 		456F47762A0657E300E13A26 /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F47752A0657E300E13A26 /* NSNotificationName.swift */; };
 		456F477A2A065B9A00E13A26 /* UITextFieldSecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F47792A065B9A00E13A26 /* UITextFieldSecureToggle.swift */; };
 		456F477E2A070C8C00E13A26 /* ShakeyBell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F477D2A070C8C00E13A26 /* ShakeyBell.swift */; };
@@ -48,6 +50,8 @@
 /* Begin PBXFileReference section */
 		4506F48C2A08317600153E73 /* SkeletonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoadable.swift; sourceTree = "<group>"; };
 		4506F48E2A08324B00153E73 /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
+		4506F4912A09811000153E73 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		4506F4932A09825800153E73 /* AccountSummaryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTests.swift; sourceTree = "<group>"; };
 		456F47752A0657E300E13A26 /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
 		456F47792A065B9A00E13A26 /* UITextFieldSecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldSecureToggle.swift; sourceTree = "<group>"; };
 		456F477D2A070C8C00E13A26 /* ShakeyBell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBell.swift; sourceTree = "<group>"; };
@@ -95,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4506F4902A0980E200153E73 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4506F4912A09811000153E73 /* ProfileManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		456F477C2A070B9500E13A26 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				456F47872A07A8B300E13A26 /* ProfileTests.swift */,
+				4506F4932A09825800153E73 /* AccountSummaryViewControllerTests.swift */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -202,6 +215,7 @@
 				456F47832A079C4B00E13A26 /* AccountSummaryViewController+Networking.swift */,
 				45B583822A044F960070AA3B /* Header */,
 				45B583832A044FA70070AA3B /* Cells */,
+				4506F4902A0980E200153E73 /* Networking */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -339,6 +353,7 @@
 				45B5836C29FE12160070AA3B /* LoginView.swift in Sources */,
 				4506F48F2A08324B00153E73 /* SkeletonCell.swift in Sources */,
 				45B583762A00462A0070AA3B /* LocalState.swift in Sources */,
+				4506F4922A09811000153E73 /* ProfileManager.swift in Sources */,
 				45B583732A0034CD0070AA3B /* DummyViewController.swift in Sources */,
 				45B5837F2A02EAE70070AA3B /* AccountSummaryHeaderView.swift in Sources */,
 				45B5835A29FCB2B50070AA3B /* LoginViewController.swift in Sources */,
@@ -364,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4506F4942A09825800153E73 /* AccountSummaryViewControllerTests.swift in Sources */,
 				45B583982A0615460070AA3B /* CurrencyFormatterTests.swift in Sources */,
 				456F47882A07A8B300E13A26 /* ProfileTests.swift in Sources */,
 			);
