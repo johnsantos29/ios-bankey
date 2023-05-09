@@ -23,6 +23,13 @@ class AccountSummaryViewController: UIViewController {
 
     // networking
     var profileManager: ProfileManageable = ProfileManager()
+    
+    // Error alert
+    lazy var errorAlert: UIAlertController = {
+        let alert =  UIAlertController(title: "", message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        return alert
+    }()
 
     var isLoaded = false
 
@@ -230,11 +237,10 @@ extension AccountSummaryViewController {
     }
 
     private func showErrorAlert(title: String, message msg: String) {
-        let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
+        errorAlert.title = title
+        errorAlert.message = msg
 
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-
-        present(alert, animated: true)
+        present(errorAlert, animated: true)
     }
 }
 
